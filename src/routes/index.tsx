@@ -1,5 +1,9 @@
-import type { DocumentHead } from "@qwik.dev/router";
+import { routeLoader$, type DocumentHead } from "@qwik.dev/router";
 import { component$ } from "@qwik.dev/core";
+
+export const randomThing = routeLoader$(() => {
+  console.log("randomThing");
+});
 
 export default component$(() => {
   return (
